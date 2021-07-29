@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  
+  border-collapse: collapse;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+
+  transform:translate(-50%, -50%);
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+	body
+	{
+		align:center;
+		margin-left: 300px;
+		font-family: helvetica;
+	}
+		h2
+		{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		
+		#a1
+		{
+			
+			
+		width: 110%;
+		padding: 30px;
+  		background: #111845a6;
+  		box-sizing: border-box;
+  		border-radius: 5%;
+  		box-shadow: 0 20px 50px rgb(23, 32, 90);
+  		border: 2px solid #2a3cad;
+  		color: white;
+
+
+		}
+		input
+	{
+		width: 109%;
+		margin: 11px;
+	}
+	#submit
+	{
+		
+		background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: 0.25s;
+  width: 153px;
+
+	}
+	#submit:hover {
+  box-shadow: 0px 1px 18px #24c64f;
+}
+	img
+	{
+		position: fixed;
+    left: 2px;
+
+     color: #2dbd6e;
+    top: 1px;
+    
+	}
+	.content
+	{
+		margin-top: 20px;
+	}
+	.underline-title {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 3px;
+  margin: auto;
+  margin-bottom: 28px;
+  width: 175px;
+}
+h1
+{
+	text-align: center;
+	margin-bottom: 5px;
+	font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+
+        
+    
+
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<img src="top1.jpeg" width="150" height="70">
+<div class="content">
+
+ 
+  <div id="a1">
+  	 <h1>REGISTER</h1>
+  	 <div class="underline-title"></div> 
+  	<table >
+		<form  action="index.php"  method="POST"  >
+		<tr>
+			<td align="center">FIRST NAME</td>
+			<td><input type="text" name="fn" id="fn" placeholder="ENTER FIRST NAME" required></td>
+		</tr>
+		<tr>
+			<td align="center">LAST NAME</td>
+			<td><input type="text" id="ln" name="ln" placeholder="ENTER LAST NAME" required></td>
+		</tr>
+		
+		<tr>
+			<td align="center">EMAIL-ID</td>
+			<td><input type="email" id="em" name="em" placeholder="ENTER YOUR EMAIL ADDRESS" autocomplete="on" required="Please fill this field" ></td>
+		</tr>
+		
+		<tr>
+			<td align="center">PHONE</td>
+			<td><input type="phone" id="ph" name="ph" placeholder="ENTER YOUR PHONE NUMBER " required="Please fill this field"></td>
+		</tr>
+
+		<tr>
+			<td align="center">SET USERNAME</td>
+			<td><input type="text" id="un" name="un" placeholder="SET USERNAME" required="Please fill this field"></td>
+		</tr>
+
+		<tr>
+			<td align="center">SET PASSWORD</td>
+			<td><input type="password" id="pass" placeholder="SET YOUR NEW PASSWORD " required="Please fill this field"></td>
+		</tr>
+		<tr>
+			<td align="center">CONFIRM PASSWORD</td>
+			<td><input type="password" id="cp" name="cp" placeholder="RE-ENTER THE PASSWORD " required="Please fill this field"></td>
+		</tr>
+		<tr>
+			<td align="center">WHO IS YOUR CHILDHOOD FRIEND ?</td>
+			<td><input type="text" id="ans" name="ans" placeholder="ENTER YOUR ANSWER " required="Please fill this field"></td>
+		</tr>
+
+	
+		
+	
+		<tr>
+			<td>&nbsp</td>
+		</tr>
+	</table>
+		
+	<input type="submit" id="submit" name="sub" value="REGISTER">
+</form><br>
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	<br>
+	<div class="link"  ><a href="login.php" style="color:#10c254">Already signed up?</a>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+var password = document.getElementById("pass"), confirm_password = document.getElementById("cp");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+
+  }
+  
+}
+
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+
+
+</body>
+</html>
