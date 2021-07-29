@@ -1,0 +1,16 @@
+//user information table
+create table info (username varchar(50) primary key,name  varchar(100),email varchar(100),
+phone varchar(100),password varchar(50),date datetime,dp varchar(300),ans varchar(300),coverpic(300))
+
+//Post table
+
+create table post (username varchar(50) primary key,title  varchar(100),location varchar(100),
+body varchar(100),img varchar(50),date datetime,dp varchar(300))
+
+//status table
+create table status (username varchar(50) primary key,dp  varchar(100),status varchar(100),
+caption varchar(100),date datetime)
+
+//mesaages transaction table
+create table status (user varchar(50) ,frwd  varchar(100),message varchar(100),
+dt date,time time)
